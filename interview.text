@@ -1,0 +1,12 @@
+
+
+// folder --->
+// fixture --- testdata
+// intergration --- testcase 
+// support -->  ==> commands.js ===> commands (common utility)
+// plugin index.js  ===> plugin configure ===> BDD allure
+// support ---> index.js ====> uncaught exception managed there
+
+// support -- POM class --- elements 
+// common utility - models 
+// videos or screen -- when run on command line on failure
