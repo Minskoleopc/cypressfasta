@@ -35,7 +35,7 @@ describe('tranverse method in cypress',function(){
     it('To get a DOM element at a specific index, use the .eq() command.',function(){
         cy.visit('https://webdriveruniversity.com/Data-Table/index.html')
         cy.get('ol[class="breadcrumb traversal-breadcrumb"]').children().eq(0).should('contain','Home')
-        cy.get('ol[class="breadcrumb traversal-breadcrumb"]').children().eq(1).should('cotain','About Us')
+        cy.get('ol[class="breadcrumb traversal-breadcrumb"]').children().eq(1).should('contain','About Us')
         cy.get('ol[class="breadcrumb traversal-breadcrumb"]').children().eq(2).should('contain','Contact Us')
     })
 
@@ -79,54 +79,75 @@ describe('tranverse method in cypress',function(){
         //<li>E</li>
     //</ul>
 
-    it.only('To get all previous sibling DOM elements within elements until other element, use the .prevUntil() command.',function(){
+    it('To get all previous sibling DOM elements within elements until other element, use the .prevUntil() command.',function(){
         cy.visit('https://webdriveruniversity.com/Data-Table/index.html')
         cy.get('#veggie').prevUntil('#fruits').should('have.length',5)
     })
 
     
-    it.only('To get all of the next sibling DOM elements within elements until another element, use the .nextUntil() command.',function(){
+    it('To get all of the next sibling DOM elements within elements until another element, use the .nextUntil() command.',function(){
         cy.visit('https://webdriveruniversity.com/Data-Table/index.html')
         cy.get('#fruits').nextUntil('#veggie').should('have.length',5)
     })
 
     
-    it('',function(){
+    it('To remove DOM element(s) from the set of elements, use the .not() command.',function(){
+        cy.visit('https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html')
+        cy.get('input[type="radio"]').not('[disabled]').should('have.length','7')
+    })
+
+    
+    it('To get DOM elements that match a specific selector, use the .filter() command.',function(){
+        cy.visit('https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html')
+        cy.get('input[type="radio"]').filter('[disabled]').should('have.attr','value','cabbage')
+    })
+
+    
+    it('To get descendant DOM elements of the selector, use the .find() command.',function(){
+        cy.visit('https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html')
+        cy.get('ul[class="traversal-drinks-list"]').find('li[id="coffee"]').should('have.text',"Coffee")
         
     })
 
     
-    it('',function(){
+    it.only('To get parent DOM element of elements, use the .parent() command.',function(){
+        cy.visit('https://webdriveruniversity.com/Data-Table/index.html')
+        cy.get('#milk').parent().should('have.attr','class','traversal-drinks-list')
+
         
     })
 
     
-    it('',function(){
-        
+    it.only('To get parents DOM element of elements, use the .parents() command.',function(){
+        cy.visit('https://webdriveruniversity.com/Data-Table/index.html')
+        cy.get('#milk').parents().should('have.attr','class','traversal-drinks-list')
+        cy.get('#milk').parents('div').should('have.attr','class','thumbnail')
+        cy.get('#milk').parents('div').find('[class="col-sm-12"]')
+        cy.get('#milk').parents('body')
     })
 
     
-    it('',function(){
-        
+    it.only('To get the closest ancestor DOM element, use the .closest() command.',function(){
+        cy.visit('https://webdriveruniversity.com/Data-Table/index.html')
+        cy.get('#milk').closest('div').should('have.class','thumbnail')
+        //cy.get('#milk').closest('h2').should('have.text','List') not sibling parents only ancestors
     })
 
     
-    it('',function(){
+    it.only('To get parents DOM element of elements until other element, use the .parentsUntil() command.',function(){
+
+        cy.visit('https://webdriveruniversity.com/Data-Table/index.html')
+        cy.get('#milk').parentsUntil('div[class="col-sm-12"]').should('have.length',2)
+
         
     })
 
-    
-    it('',function(){
-        
-    })
 
-    
-    it('',function(){
-        
-    })
-
-    
-
+    //  forward 
+    //  backward 
+    //  reload 
+    //  what is difference between cookies , localstorage , sessionstorage
+    //  what are commands in cypress to handle same
 
 
 })
