@@ -1,6 +1,4 @@
 ///<reference types="cypress" />
-
-
 describe('verify the contact us form along with navigation',function(){
 
     it('verify the contact us form',function(){
@@ -87,7 +85,7 @@ describe('verify the contact us form along with navigation',function(){
     
     
     
-    
+    // commands ===>  
     
     
     

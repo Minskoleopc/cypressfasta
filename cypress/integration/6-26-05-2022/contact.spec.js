@@ -24,7 +24,6 @@ describe('verify the contact us form along with navigation',function(){
         cy.validateContactUs("","","","")
         
     })
-
     
     it('verify the contact us form',function(){
         //<h1 class = "one" id = "two" name = "nm">Hello</h1>
@@ -64,3 +63,31 @@ describe('verify the contact us form along with navigation',function(){
 
 
 })
+
+// 2012
+
+// 2009 -- math 3 ===>  3 back  m1
+
+// semester =====> 49 =====
+
+// semester --- 4 back  m1
+
+// semeter == 6 
+
+// semeter ------ m1 
+
+// semester 8
+
+// 10 engni
+
+//2012  - 2015
+
+// 2015 - 2017 
+
+// 2022 ==> x
+
+// 80 %
+
+// failuers ---->   today 
+
+
