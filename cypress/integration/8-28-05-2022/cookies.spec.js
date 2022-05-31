@@ -24,14 +24,11 @@ describe('verify the url',function(){
      
       cy.window().then(function(win){
         win.localStorage.setItem('p','hello')
-     })
+     
+    })
 
      cy.clearLocalStorage()
      
-
-
-
-
     })
 
 

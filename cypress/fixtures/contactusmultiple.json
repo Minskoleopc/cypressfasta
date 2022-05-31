@@ -1,0 +1,22 @@
+[
+
+    {
+        "firstname": "amol",
+        "lastname": "rao",
+        "email": "hello@cypress.io",
+        "message": "Learning dev oops"
+    },
+    {
+        "firstname": "amol2",
+        "lastname": "rao2",
+        "email": "hello2@cypress.io",
+        "message": "Learning dev oops2"
+    },
+    {
+        "firstname": "amol3",
+        "lastname": "rao3",
+        "email": "hello2@cypress.io",
+        "message": "Learning dev oops3"
+    }
+
+]
