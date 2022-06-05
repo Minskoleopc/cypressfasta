@@ -295,3 +295,10 @@ pro.then(function (arr) {
 
 
 
+
+    //  commands asyn  ======> sync ------> js 
+
+
+    // commands async ====DOM 
+
+    // cy.get() =====>promises =====> synchronus

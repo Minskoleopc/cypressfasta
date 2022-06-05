@@ -56,3 +56,9 @@ describe('Verify the async and sync in cypress',function(){
     })
 
 })
+
+// sync =====?
+
+
+/// one by executuion 
+/// async code ===> 
