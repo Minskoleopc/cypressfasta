@@ -1,0 +1,28 @@
+
+// default -----> testconfig
+
+// cypress.json 
+
+// commandline 
+
+//  local        staging      canary      production
+//  url           url         url          url 
+// un pwd        un pwd       un pwd       un pwd
+// db pwd        db pwd       db pwd        db pwd
+
+// commandline 
+
+//  differnt config for every env
+
+// utilities
+
+// basic command to set the default url 
+// command headless mode or headed mode 
+
+npx cypress run --config baseUrl="https://www.yahoo.com/" 
+npx cypress run --headed -- config baseUrl="https://www.yahoo.com/"  (electron)
+npx cypress run --headed --browser chrome -- config baseUrl="https://www.youtube.com/"
+
+
+
+
