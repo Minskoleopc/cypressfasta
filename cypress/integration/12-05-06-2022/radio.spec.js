@@ -95,10 +95,15 @@ describe('verify the radio button , checkbox, dropdown ,enable disable',function
         cy.visit('http://google.com')
         cy.get('[name="q"]').type('javascript')
         cy.get('[role=option]').find('span').each(function(el){
-            //cy.log(el.text())
+            cy.log(el.text())
             if(el.text().includes('javascript tutorial')){
-                cy.wrap(el).click()
+                cy.log(el.text())
+                //cy.wrap(el).click()
+                return false
+
             }
+            
+            
         })
         cy.url().should('contain','tutorial')
 
