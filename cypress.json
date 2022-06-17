@@ -1,3 +1,4 @@
 {
-    "baseUrl":"https://www.google.com"
+    "baseUrl":"https://www.google.com",
+    "chromeWebSecurity": false 
 }
