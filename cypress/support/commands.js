@@ -12,6 +12,8 @@
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
 
+import 'cypress-file-upload';
+
 Cypress.Commands.add('login', (username, password) => { 
     cy.visit('https://opensource-demo.orangehrmlive.com/')
     cy.get('#txtUsername').type(username)
