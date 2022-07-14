@@ -24,5 +24,9 @@ npx cypress run --headed -- config baseUrl="https://www.yahoo.com/"  (electron)
 npx cypress run --headed --browser chrome -- config baseUrl="https://www.youtube.com/"
 
 
+// for different config file 
+
+npx cypress run headed --config-file staging-config.json
+npx cypress run headed --browser chrome --config-file staging-config.json
 
 

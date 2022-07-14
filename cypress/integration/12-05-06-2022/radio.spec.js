@@ -112,6 +112,8 @@ describe('verify the radio button , checkbox, dropdown ,enable disable',function
 })
 
 
+// country ---> india ====> ----- cities =====> mumbai
+
 // API ----> 
 // reqres // post put delete patch get 
 // paypal // token 

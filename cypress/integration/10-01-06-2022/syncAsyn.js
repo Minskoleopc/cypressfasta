@@ -216,21 +216,21 @@ two()
 
 // multiple asyn call 
 
-// function info() {
-//     setTimeout(function () {
-//         console.log('user will be created')
-//     }, 3000)
+function info() {
+    setTimeout(function () {
+        console.log('user will be created')
+    }, 3000)
 
-//     setTimeout(function () {
-//         console.log('getting id')
-//     }, 2000)
+    setTimeout(function () {
+        console.log('getting id')
+    }, 2000)
 
-//     setTimeout(function () {
-//         console.log('getting user info')
-//     }, 1000)
+    setTimeout(function () {
+        console.log('getting user info')
+    }, 1000)
 
-// }
-// info()
+}
+info()
 
 // usercreate =====> id =======> userinfo
 
@@ -302,3 +302,7 @@ pro.then(function (arr) {
     // commands async ====DOM 
 
     // cy.get() =====>promises =====> synchronus
+
+    //javscript ===> sync == break ===> manually promise ====>
+
+    //=====?

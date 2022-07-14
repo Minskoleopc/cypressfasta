@@ -58,6 +58,16 @@ describe('verify the get navigation bar',function(){
     })
 
 
+    //cypress ====> persistence ====> selenium 
+    //globant ===> 
+    // prittiers , typescrtip , API 
+    // Javascript ---> api ==> response === unit 
 
+    // cypress - 7 am == cypress
+    // javascript - 8pm --- projects 
+    // typescript --
 
 })
+
+//let and const -- assignment
+// let , const and var --- scope

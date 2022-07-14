@@ -42,6 +42,11 @@ testcase - how to test (one scenario can have multiple testcases)
 8)What is to automation ?
 // Automation is usually done for regression testing
 
+npx cypress run --config baseUrl="https://www.yahoo.com/" 
+
+
+
+
 
 
 

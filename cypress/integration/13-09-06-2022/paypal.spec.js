@@ -1,6 +1,5 @@
 describe('verify the pal api for genrate token', function () {
 
-
     it('verify the token api', function () {
 
         let token ;

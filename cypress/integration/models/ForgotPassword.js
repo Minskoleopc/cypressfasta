@@ -11,8 +11,6 @@ export class ForgotPassword{
     validateText(){
         cy.get('h1').should('be.visible').should('have.text',"Forgot Your Password?")
     }
-
-
     validateResetPasswordButton(username){
         cy.get('#securityAuthentication_userName').type(username)
         cy.get('#btnSearchValues').click()
@@ -27,3 +25,8 @@ export class ForgotPassword{
 
 
 }
+
+// XHR 
+
+
+

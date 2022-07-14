@@ -75,7 +75,7 @@ describe('verify the Intercept call',function(){
             url:"https://jsonplaceholder.cypress.io/comments/1"
         }, {
             // response
-            statusCode: 404,
+            statusCode: 200,
             body:{
                 "postId": 1,
                 "id": 1,

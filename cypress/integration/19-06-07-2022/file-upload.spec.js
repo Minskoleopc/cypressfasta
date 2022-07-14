@@ -20,12 +20,9 @@
     })
 
     it('verify the basic file upload and validate example -3',function(){
-
         cy.visit('https://css-tricks.com/examples/DragAndDropFileUploading/')
         cy.get('#file').attachFile(filePath)
         cy.get('.box__success').should('contain','Done')
-
-
     })
 
     
@@ -47,15 +44,9 @@
     })
 
     it.only('verify the basic file upload and validate example -3',function(){
-
         cy.visit('https://davidwalsh.name/demo/multiple-file-upload.php')
         cy.get('#filesToUpload')
-        .attachFile({ filePath:filePath, fileName: 'hello.jpg' });
-       
-
+        .attachFile({ filePath:filePath, fileName: 'hello.jpg' }); 
     })
-
-
-
 
  })

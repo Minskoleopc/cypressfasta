@@ -28,6 +28,11 @@ describe('verify the table functionality',function(){
 
 })
 
+
+
+
+
+
 // cypress are asyn ===> there execution is sync 
 // if we include js jquery execution is no longer sync , so we to consume promise
 // manually using then block
